@@ -1,0 +1,139 @@
+
+/* ---------------------------------------------------------------- */
+.logo{
+    font-size: 4rem;
+    color: #e40000;
+    margin-left: 20px ;
+    margin-top: -1px ;
+}
+.main-nav div ul{
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.main-nav div ul li a{
+    margin: 2px ;
+    padding: 5px;
+}
+.content h1{
+    letter-spacing: 25px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    text-align: center;
+}
+/* ---------------------------------------------------------------- */
+.info{
+ background: #ebc800;
+}
+@supports (display: grid) {
+    .info {
+      width: auto;
+      min-height: 0;
+    }
+    /* ------------------------- first  grid part -------------------------------- */
+    .info1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / 15;
+        -webkit-clip-path:polygon(0% 0, 0% 100%, 100% 100%, 100% 0%);
+        clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 0%);
+        background:url(/images/pix5.jpg) no-repeat center center/cover;
+     }
+     
+    
+    /* ------------------------- second grid part -------------------------------- */
+      .info2 {
+        grid-column: 0;
+        margin-top: 0px;
+        z-index: -10;
+      }
+         /* ------------------------- third grid part -------------------------------- */
+      .info3 {
+        grid-column: 1 / span 2;
+        grid-row: 15/ 40;
+        -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-bottom: 5px;
+      }
+     
+
+
+        /* ------------------------- fourth grid part -------------------------------- */
+      .info4 {
+        grid-column:0;
+        grid-row: 0/ 0;      }
+
+    }
+.inflex h1{
+    text-align: center;
+}
+.resume h3{
+font-size: 3rem;
+}
+.resume ol{
+  font-family: 'Raleway', sans-serif;
+    margin-bottom:20px; 
+}
+.resume ol li {
+    margin-bottom: 20px;
+    font-size: 1rem
+
+}
+.dci3 h2{
+  text-align: center;
+  font-size: 1rem;
+}
+.group3 h2{
+  text-align: center;
+  font-size: 1rem;
+}
+.group2 p{
+  margin: 0 10px;
+  color: rgb(0, 0, 0);
+  font-size:1rem;
+}
+.center{
+  font-size: 1rem;
+}
+.dci1{
+  background:linear-gradient(#52b60081 , #ffee0086), url(/images/group2.jpeg) no-repeat center center/cover;
+}
+.dci2{
+
+  background: #ac0042;
+  color: #fff;
+
+}
+ .dci2 span{
+  color: #fff;
+  font-size: 1rem;
+
+}
+.dci2 p{
+  color: #fff;
+  font-size: 0.75rem;
+}
+.dci3{
+  background: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.last2 a{
+  margin: 20px;
+  font-size:2rem;
+}
+.last2 a:hover{
+  margin: 20px;
+  font-size:2rem;
+  border-radius: 50%;
+}
+.last2 a:active{
+  margin: 20px;
+  font-size:2rem;
+}
+.last1{
+  font-size: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}

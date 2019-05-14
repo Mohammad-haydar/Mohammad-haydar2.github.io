@@ -1,0 +1,462 @@
+/*    font-family: 'Raleway', sans-serif;      
+*/
+
+
+
+@keyframes color3{
+    0%{
+        background: #fff;
+        color: rgba(0, 0, 0, 0.52);
+    }
+    10%{
+        background: #000000;
+        color: #fff;
+    }
+    20%{
+        background: #fff;
+        color: #000; }
+    30%{
+        background: #000000;
+        color: #fff;
+    }
+    40%{
+        background: #fff;
+        color: #000;
+    }
+    50%{
+        background: #000000;
+        color: #fff;
+    }
+    60%{
+        background: #fff;
+        color: #000;
+    }
+    70%{
+        background: #000000;
+        color: #fff;
+    }
+    80%{
+        background: #fff;
+        color: #000;
+    }
+    90%{
+        background: #000000;
+        color: #fff;
+    }
+    100%{
+        background: #fff;
+        color: #000;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #333;
+    font-size: 16px;
+    width: 100%;
+}
+/* ------------------------------------- header section ---------------------------------------- */
+#container{
+    
+    background:linear-gradient(#ee010167 , #000000ce), url(/images/pix2.jpg) no-repeat center center/cover ;
+    height: 90vh;
+}
+.main-nav{
+    background:  rgba(0, 0, 0, 0.472) ;
+    height: 70px;
+    display: flex;
+    justify-content:space-between; 
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 5rem;
+    color: #ffffff;
+    margin-left: 200px ;
+    margin-top: -10px ;
+    
+}
+.navigation{
+    margin: 0;
+    padding: 0;
+}
+.color2{
+    animation:color3 10s infinite ;
+}
+.main-nav div ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+.main-nav div ul li a{
+    margin: 5px ;
+    padding: 10px;
+    text-decoration: none;
+    font-family:'Raleway', sans-serif;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 10px;
+    background: #000;
+}
+.main-nav div ul li a.active{
+    background: #faab00;
+}
+.main-nav div ul li a:hover{
+    background: #ffffff;
+    color: #000000;
+}
+.content{
+    color: #fff;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
+.content h1{
+    letter-spacing: 25px;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+.content a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #faab0083;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    letter-spacing: 10px;
+}
+.content a:hover{
+    color: #ffffff;
+    background: #00000067;
+}
+.content a:active{
+    color: #dff800;
+    background: #1200756c;
+}
+/* ------------------------------------------ # about me section ---------------------------------------------- */
+
+#about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    background: #000000;
+    margin: 10px;
+    grid-gap: 20px;
+}
+.info{
+    
+    background: #ebc800;
+    
+}
+@supports (display: grid) {
+    .info {
+      width: auto;
+      min-height: 0;
+    }
+
+    /* ------------------------- first  grid part -------------------------------- */
+    .info1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / 15;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 68px), 0 100%);
+        background:url(/images/pix5.jpg) no-repeat center center/cover;
+     }
+     
+    
+    /* ------------------------- second grid part -------------------------------- */
+      .info2 {
+        grid-column: 1;
+        grid-row: 15 / 40;
+        -webkit-clip-path: polygon(0 12%, 0 88%, 91% 83%, 100% 6%);
+        clip-path: polygon(0 12%, 0 88%, 91% 83%, 100% 6%);
+        margin-top: -79px;
+        background:linear-gradient(#00a9f781 , #000000de), url(/images/IMG_0172.JPG) no-repeat center center/cover;
+      }
+         /* ------------------------- third grid part -------------------------------- */
+      .info3 {
+        grid-column: 2;
+        grid-row: 15/ 40;
+        -webkit-clip-path: polygon(11% 6%, 3% 86%, 100% 100%, 100% 0%);
+        clip-path: polygon(11% 6%, 3% 86%, 100% 100%, 100% 0%);
+        margin-top: -79px;
+        margin-left: -15%;
+        margin-bottom: 18px;
+      }
+     
+
+
+        /* ------------------------- fourth grid part -------------------------------- */
+      .info4 {
+        grid-column: 1 / span 2;
+    grid-row: 40 / 45;
+    -webkit-clip-path: polygon(45% 0%, 66% 16%, 181% 100%, 0% 100%, 0% 15%);
+    clip-path: polygon(45% 0%, 66% 16%, 181% 100%, 0% 100%, 0% 15%);
+    margin-top: -108px;
+    background:linear-gradient(#f700ce81 , #000000de), url(/images/pix.jpg) no-repeat center center/cover;
+      }
+
+    }
+    
+
+
+/* ------------------------- first  grid part -------------------------------- */
+.inflex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+#about .inflex h1{
+    letter-spacing: 20px;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1600;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+#about .inflex h3{
+    letter-spacing: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1600;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    
+}
+#about .inflex div{
+    margin-top:10px;
+}
+
+/* ------------------------- second grid part -------------------------------- */
+
+
+/* ------------------------- third grid part -------------------------------- */
+.resume{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+}
+.resume h3{
+    font-size: 5rem;
+    
+    padding-bottom: 10px;
+}
+.resume ol{
+  font-family: 'Raleway', sans-serif;
+    margin-bottom:100px; 
+}
+.resume ol li {
+    margin-bottom: 20px;
+    font-size: 1.3rem
+
+}
+
+/* ------------------------- fourth grid part -------------------------------- */
+
+
+/* ------------------------- the Jobcenter Part -------------------------------- */
+
+@supports (display: grid){
+    .contain{
+        margin:0 10px ;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        border-bottom: 15px solid #333;
+    }
+    
+    .group1{
+        grid-column: 1 ;
+        grid-row: 1 / 20;
+        background:linear-gradient(#0055b681 , #ffee0086), url(/images/group.jpeg) no-repeat center center/cover;
+    }
+    .group2{
+        grid-column: 2 ;
+        grid-row: 1 / 30;
+        background: #e7aa01;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .group2 h1{
+
+    }
+    .group2 p{
+        margin: 0 30px;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        text-align: justify;
+
+    }
+    .center{
+        text-align: center ;
+        font-size: 1.9rem;
+        color: #000000;
+        font-family: 'Raleway', sans-serif;
+    }
+    .group3{
+        grid-column: 1 ;
+        grid-row: 20 / 30;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #bb222f;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        
+    }
+    /* ---------------------------------- DCI ------------------------------------ */
+    .dci1{
+        background:linear-gradient(#52b60081 , #ffee0086), url(/images/group2.jpeg) no-repeat center center/cover;
+    }
+    
+    .dci2{
+
+        background: #ac0042;
+        color: #fff;
+
+    }
+    .dci2 p, .dci2 span{
+        color: #fff;
+
+    }
+
+    }
+    .dci3{
+       
+        
+        
+        background: #f5f5f5;
+        font-family: 'Raleway', sans-serif;
+        color: rgb(0, 0, 0);
+        
+    }
+
+
+/* 
+.contain{
+    height: 100%;
+    display: flex;
+
+}
+.jobcenter-main{
+    height: 95%;
+    background: #fcfcfc;
+    width: 50%;
+    margin: 10px;
+}
+.jobcenter-content1{
+    display: flex;
+    flex-direction: column;
+
+}
+ .group{
+    background: #000;
+    height: 70%;
+    margin: 10px;
+    background: url(/images/group.jpeg) no-repeat center center/cover;
+   
+}
+.group2{
+    height: 40%;
+} */
+
+
+/* .group{
+    background:   linear-gradient(#f700ce81 , #000000de), url(/images/group.jpeg) no-repeat center center/cover;
+}
+.group2{
+    background: linear-gradient(#004ef781 , #000000de), url(/images/group2.jpeg) no-repeat center center/cover;
+} */
+
+
+
+
+/* ------------------------- FOOTER  -------------------------------- */
+.last{
+    margin-top:20px; 
+    background: rgb(119, 119, 119);
+    height: 30vh;
+    display: flex;
+    color: #fff;
+    text-align: center;
+
+}
+.last1{
+    background: #000;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+.last1 h4{
+    margin: 10px;
+    text-align: center;
+}
+.last2{
+    background: rgb(189, 10, 10);
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last2 a{
+    margin: 50px;
+    font-size: 5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.last2 a:hover{
+    margin: 50px;
+    font-size: 5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* background: rgba(255, 255, 255, 0.39);  box-shadow: 2px 2px 10px ;padding: 15px;*/
+    
+    border-radius: 50%;
+   
+}
+.last2 a:active{
+    margin: 50px;
+    font-size: 5rem;
+    text-decoration: none;
+    color: rgb(243, 178, 0);
+    /* background: rgb(23, 0, 87);
+    padding: 15px;
+    border-radius: 50%; */
+}
+
+
+
+
+
+
+
+
